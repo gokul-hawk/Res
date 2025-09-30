@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Import your components
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import ProjectSection from './components/Projects.jsx';
+import ContactSection from './components/Contact.jsx';
+import Header from './components/Header.jsx';
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const App = () => (
+  <>
+  <Header />
+  <ReactFullpage
+    // This is where you configure the vertical scroll and navigation
+    scrollingSpeed={700}
+    navigation={true}
+    navigationTooltips={['Home', 'About', 'Projects', 'Contact']}
+    showActiveTooltip={true}
+    controlArrows={true} // Add this to enable horizontal arrows for slides within a section
+    render={({ state, fullpageApi }) => {
+      return (
+        
+        <ReactFullpage.Wrapper>
+          
+          <div className="section">
+            <Home />
+          </div>
+          <div className="section">
+            <About />
+          </div>
+          <div className="section">
+            <ProjectSection />
+          </div>
+          <div className="section">
+            <ContactSection />
+          </div>
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
+  </>
+);
 
-export default App
+export default App;
