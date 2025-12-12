@@ -1,16 +1,45 @@
-# React + Vite
+# Portfolio / Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built to showcase skills, projects, and contact information with a modern, interactive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive "About Me"**: Drag and toss words in the bio section for a fun user experience.
+- **Full-Page Scrolling**: Smooth vertical navigation between sections using `react-fullpage`.
+- **Responsive Design**: Optimized for various screen sizes, ensuring a consistent experience on mobile and desktop.
+- **Dynamic Animations**: Engaging motion effects powered by `framer-motion`.
+- **Modern UI**: Styled with Tailwind CSS for a clean and professional look.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Scrolling**: [React Fullpage](https://alvarotrigo.com/react-fullpage/)
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/gokul-hawk/Res.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd Res
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## Live Demo
+
+Check out the live version of the portfolio here:
+[Live Demo on Vercel](https://res-sand-xi.vercel.app/)
