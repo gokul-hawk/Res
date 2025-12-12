@@ -25,11 +25,11 @@ const About = () => {
 
     <section
       id="about"
-      className="blended-background h-screen bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('/H11.png')" }}
+      className="blended-background min-h-screen bg-cover bg-center flex flex-col items-center justify-center py-20" style={{ backgroundImage: "url('/H11.png')" }}
     >
       {/* All content must be inside this single parent div for proper layout */}
 
-      <div className="max-w-4xl mx-auto text-center bg-gray-400/20" >
+      <div className="w-full px-6 md:px-20 text-center" >
         <p className="text-md text-gray-400">have fun by dragging the words</p>
         <h2 className="text-3xl md:text-4xl font-bold text-purple-400 mb-4">
           About Me
