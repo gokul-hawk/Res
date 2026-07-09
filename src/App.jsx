@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { Analytics } from '@vercel/analytics/react';
 
 // Import your components
 import Home from './components/Home.jsx';
@@ -38,6 +39,7 @@ const App = () => (
         );
       }}
     />
+    <Analytics />
   </>
 );
 
